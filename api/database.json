@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "name": "TEST",
+      "address": "1234 Test Drive",
+      "email": "test@test.com",
+      "id": 1
+    }
+  ],
+  "memories": [
+    {
+      "title": "test",
+      "memory": "test test teest test test",
+      "childId": 1,
+      "id": 2
+    },
+    {
+      "title": "testting",
+      "memory": "testing testing ",
+      "childId": 1,
+      "id": 3
+    }
+  ],
+  "children": [
+    {
+      "name": "Kennedy Lewis",
+      "birthday": "05/15/2018",
+      "id": 1
+    }
+  ]
+}
