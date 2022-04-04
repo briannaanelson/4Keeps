@@ -10,7 +10,7 @@ export const Register = ({setAuthUser}) => {
     const navigate = useNavigate()
 
     const existingUserCheck = () => {
-        return fetch(`http://localhost:8088/customers?email=${email.current.value}`)
+        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
             .then(res => res.json())
             .then(user => !!user.length)
     }
@@ -22,7 +22,7 @@ export const Register = ({setAuthUser}) => {
         existingUserCheck()
             .then((userExists) => {
                 if (!userExists) {
-                    fetch("http://localhost:8088/customers", {
+                    fetch("http://localhost:8088/users", {
                         method: "POST",
                         headers: {
                             "Content-Type": "application/json"
@@ -69,7 +69,7 @@ export const Register = ({setAuthUser}) => {
                             <input ref={email} type="email" name="email" className="form-control" placeholder="Email address" required />
                         </fieldset>
                         <fieldset>
-                            <button type="submit"> Sign In </button>
+                            <button type="submit"> Sign Up </button>
                         </fieldset>
                         </form>
                 </main>
