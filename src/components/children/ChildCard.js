@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Child.css"
 
 export const ChildCard = ({ child, handleDeleteChild }) => {
     return (
@@ -8,6 +9,7 @@ export const ChildCard = ({ child, handleDeleteChild }) => {
                 <h2> Name: <span className="child-name">
                     {child.name}
                 </span></h2>
+                <img src={'./images/kennedyCropped.png'} className="Kennedy"></img>
                 <p>Birthday: {child.birthday}</p>
                 <Link to={`/children/${child.id}/edit`}>
                     <button>Edit Child</button>

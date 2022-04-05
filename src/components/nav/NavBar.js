@@ -32,10 +32,11 @@ return (
                    <li> <Link className="navbar_link" to="/children">Children. </Link></li>
 
                    <li> <Link className="navbar_link" to="/users">My Account. </Link></li>
-
-                   <li>  <span className="navbar_link" onClick={handleLogout}>Logout. </span></li>
+                   
+                   {isAuthenticated
+                  ? <li>  <span className="navbar_link" onClick={handleLogout}>Logout. </span></li>
         
-                   <li> <Link className="navbar_link" to="/login">Login. </Link></li>
+                   :<li> <Link className="navbar_link" to="/login">Login. </Link></li>}
                     </ul>
                 </div>
             </nav>

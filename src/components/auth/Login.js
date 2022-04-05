@@ -38,7 +38,8 @@ export const Login = ({setAuthUser}) => {
 
                 <section>
                     <form className="form--login" onSubmit={handleLogin}>
-                        <h1>4Keeps</h1>
+                        
+                       <img src={'/images/giraffe.png'} className="logo"></img>
                         <h2>Please sign in</h2>
                         <fieldset>
                         <label htmlFor="inputEmail">Email Address</label>

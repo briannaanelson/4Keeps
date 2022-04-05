@@ -3,6 +3,7 @@ import { MemoryCard } from "./MemoryCard";
 import { getAllMemories, getMemoryById, deleteMemory, getRandomId } from "../../modules/MemoryManager";
 import { useNavigate } from "react-router-dom";
 import { MemoryHighlight } from "./MemoryHighlight";
+import "./MemoryList.css"
 
 export const MemoryList = () => {
     const [memories, setMemories] = useState([]);
@@ -37,13 +38,11 @@ export const MemoryList = () => {
 
     return(
     <>
-    <>
-    <h1>Memory Highlight</h1>
-    <button onClick={refreshHighlightMemory}>Reload</button>
-    {
-    highlightId && <MemoryHighlight memoryId={highlightId} />
-    }
-    </>
+   
+   <div className="memories">
+   <h1>Memories.
+   <img src={'./images/memories.png'} className="memories"></img> </h1>
+   </div>
     <section className="section-content">
         <button type="button"
             className="btn"

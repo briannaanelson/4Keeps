@@ -1,0 +1,12 @@
+.card-content img{
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    text-align: center;
+}
+button{
+    text-align: center;
+}
+.card{
+    text-align: center;
+}

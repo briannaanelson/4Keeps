@@ -44,6 +44,7 @@ export const ChildEditForm = () => {
         <form>
             <fieldset>
                 <div className="formgrid">
+                <label htmlFor="name">Child Name:</label>
                     <input
                     type ="text"
                     required
@@ -52,8 +53,8 @@ export const ChildEditForm = () => {
                     id="name"
                     value={child.name}
                     />
-                    <label htmlFor="name">Child Name:</label>
-
+                   
+                   <label htmlFor="birthday">Child's Birhtday:</label>
                     <input
                     type="text"
                     required
@@ -62,7 +63,7 @@ export const ChildEditForm = () => {
                     id="birthday"
                     value={child.birthday}
                     />
-                    <label htmlFor="birthday">Child's Birhtday:</label>
+                   
                 </div>
                 <div className="alignRight">
                     <button type="button" disbaled={isLoading}
