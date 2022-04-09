@@ -1,0 +1,19 @@
+.memories img{
+   height: 200px;
+   width: auto;
+   padding-top: 0;
+    margin: auto;
+    display: block;
+    
+}
+
+.container-cards{
+    display: flex;
+justify-content: center;
+padding-right: 20px;
+}
+.button-memory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

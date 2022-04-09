@@ -55,6 +55,7 @@ export const Register = ({setAuthUser}) => {
                     </dialog>
 
                     <form className="form--login" onSubmit={handleRegister}>
+                    <img src={'/images/giraffe.png'} className="logo"></img>
                         <h1 className="h3 mb-3 font-weight-normal"> Please Register for 4Keeps</h1>
                         <fieldset>
                             <label htmlFor="firstName"> First Name: </label>

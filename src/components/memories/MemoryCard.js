@@ -1,14 +1,16 @@
 import React, { memo } from "react";
 import { Link } from "react-router-dom";
+import "./Memory.css"
+
 
 export const MemoryCard = ({memory}) => {
     return (
-        <div className="card">
+        <div className="card-memory">
             <div className="card-content">
                 <h3>Memory: <span className="content-memorytitle">
                    {memory.title}
                  </span></h3>
-                 <p>Date: {memory.date}</p>
+                 
                  <p>About {memory.memory}</p>
                  <Link to={`/memories/${memory.id}`}>
                      <button>Expand Memory</button>

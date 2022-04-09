@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { addMemory } from "../../modules/MemoryManager";
 import { getAllChildren } from "../../modules/ChildManager";
-
+import "./MemoryForm.css"
 export const MemoryForm = () => {
     //Define the initial state of the form inputs with useState
 
@@ -54,13 +54,13 @@ export const MemoryForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="title">Memory Title:</label>
-                    <input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form_control" placeholder="Memory Title"  value={memory.title} />
+                    <input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form_controlmem" placeholder="Memory Title"  value={memory.title} />
                 </div>
             </fieldset>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="memory">Memory:</label>
-                    <input type="text" id="memory" onChange={handleControlledInputChange} required autoFocus className="form_control" placeholder="Write all you can about this specific memory!" value={memory.memory} />
+                    <input type="text" id="memory" onChange={handleControlledInputChange} required autoFocus className="form_controlmem" placeholder="Write all you can about this specific memory!" value={memory.memory} />
                 </div>
             </fieldset>
             <fieldset>
