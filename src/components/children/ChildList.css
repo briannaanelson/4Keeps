@@ -1,0 +1,10 @@
+
+
+.childpage{
+    background-image: url("/public/images/child1.png");
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+}
+
+

@@ -5,7 +5,7 @@ import "./Memory.css"
 
 export const MemoryCard = ({memory}) => {
     return (
-        <div className="card">
+        <div className="card-memory">
             <div className="card-content">
                 <h3>Memory: <span className="content-memorytitle">
                    {memory.title}

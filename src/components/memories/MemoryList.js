@@ -44,17 +44,27 @@ export const MemoryList = () => {
    <img src={'./images/memories.png'} className="memories"></img> </h1>
    </div>
     <section className="section-content">
+        <div className="button-memory">
         <button type="button"
-            className="btn"
+            className="btn-memory"
             onClick={() => {navigate("/memories/create")}}>
             New Memory
         </button>  
+        </div>
         </section>
             <div className="container-cards">
                 {memories.map(memory =>
                     <MemoryCard key={memory.id} memory={memory}
                     handleDeleteMemory={handleDeleteMemory} />)}
             </div>    
+            <h1>Remember When?</h1>
+            
+            {
+                highlightId && <MemoryHighlight memoryId={highlightId} />
+            }
+<div className="button-memory">
+<button onClick={refreshHighlightMemory} className="btn-memory">Reload</button>
+</div>
             </>
     );  
 };

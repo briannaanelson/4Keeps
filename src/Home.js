@@ -10,6 +10,7 @@ export const Home = () => {
         <>
         <div className="intro">
         <img src="./images/4keepsintro.png" alt="homelogo"></img>
+        <div className="introduction">
         <h1>Introducing 4Keeps.</h1>
         
        
@@ -18,8 +19,8 @@ export const Home = () => {
             Essintally, the goal of 4keeps. is to give parents a place to store all these memories throught the child's life and <br></br>
             later pass on the login to the child so that they are able to go back and read these wonderful entries. 
              </h3>
-
-        <h1>Our Founders</h1>
+             </div>
+        <h1>Our Creators</h1>
             <div className="founders">
                 <div className="founderpic">
             <img src={'/images/briannaCropped.png'} alt="brianna" className="brianna"></img>

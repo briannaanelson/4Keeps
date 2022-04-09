@@ -1,7 +1,6 @@
 .card-content img{
     height: 250px;
     width: auto;
-    border-radius: 50%;
     text-align: center;
 }
 button{
@@ -9,4 +8,9 @@ button{
 }
 .card{
     text-align: center;
+    background-color: #fcc59f;
+   width: 400px;
+   height: 400px;
+   border-radius: 25px;
+
 }

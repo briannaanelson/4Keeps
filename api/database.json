@@ -5,20 +5,31 @@
       "address": "1234 Test Drive",
       "email": "test@test.com",
       "id": 1
+    },
+    {
+      "email": "brianna@brianna.com",
+      "name": "Brianna Nelson",
+      "id": 2
     }
   ],
   "memories": [
     {
-      "title": "test",
-      "memory": "test test teest test test",
+      "title": "Ballet",
+      "memory": "On March 15th you started your first day of ballet and you were so excited! You had been asking to go to ballet for months and were so excited to finally join a dance Studio. I Signed you up for Malone Dance Studio, a close friend of mine from high school had been danced there and was now a teacher there. Once you were officially accepted we headed off to target and got your first dance leotard.",
       "childId": 1,
       "id": 2
     },
     {
-      "title": "testting",
-      "memory": "testing testing ",
+      "title": "First Day of Pre-K3",
+      "memory": "You had your first day of preschool on June 01, 2021 and you were not excited at all. After a few weeks though you got adjusted and ending up loving it. Here we are almost a year later and your still attending Born Again Christian Academy and you have met some of your closest friends. ",
       "childId": 1,
       "id": 3
+    },
+    {
+      "title": "First Swim",
+      "memory": "When you were just a 4 or 5 months I started taking you swimming so that you could get used to being in water.  You loved baths ever since you were first born and from then on I knew you would love being in water.",
+      "childId": 1,
+      "id": 4
     }
   ],
   "children": [

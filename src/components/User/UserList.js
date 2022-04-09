@@ -24,15 +24,15 @@ export const UserList = () => {
 
     return(
         <>
+        <div className="container-cards" style={{ backgroundImage: `url(${'./images/background4.png'})`}}>
         <section className="section-content">
             <h1 className="title">My Account</h1>
-            
-            <div className="container-cards">
                 {users.map(user =>
                     <UserCard key={user.id} user={user} 
                     handleDeleteUser={handleDeleteUser} />)}
-            </div>
+            
         </section>
+        </div>
         </>
     );
 };

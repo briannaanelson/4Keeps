@@ -6,10 +6,11 @@ export const ChildCard = ({ child, handleDeleteChild }) => {
     return (
         <div className="card">
             <div className="card-content">
+            <img src={'./images/childlogo.png'} className="Kennedy"></img>
                 <h2> Name: <span className="child-name">
                     {child.name}
                 </span></h2>
-                <img src={'./images/kennedyCropped.png'} className="Kennedy"></img>
+               
                 <p>Birthday: {child.birthday}</p>
                 <Link to={`/children/${child.id}/edit`}>
                     <button>Edit Child</button>
