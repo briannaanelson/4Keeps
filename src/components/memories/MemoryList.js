@@ -38,7 +38,7 @@ export const MemoryList = () => {
 
     return(
     <>
-   
+   <div className="memories1">
    <div className="memories">
    <h1>Memories.
    <img src={'./images/memories.png'} className="memories"></img> </h1>
@@ -57,13 +57,15 @@ export const MemoryList = () => {
                     <MemoryCard key={memory.id} memory={memory}
                     handleDeleteMemory={handleDeleteMemory} />)}
             </div>    
+            <div className="remembercard">
             <h1>Remember When?</h1>
-            
             {
                 highlightId && <MemoryHighlight memoryId={highlightId} />
             }
 <div className="button-memory">
 <button onClick={refreshHighlightMemory} className="btn-memory">Reload</button>
+</div>
+</div>
 </div>
             </>
     );  
